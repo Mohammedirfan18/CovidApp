@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Data Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>COVID-19 Data Dashboard</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Select State</h2>
+            <select id="stateSelect">
+                <option value="default">Select State</option>
+                <!-- Options will be populated dynamically using JavaScript -->
+            </select>
+        </div>
+
+        <div class="container">
+            <h2>Select District (Optional)</h2>
+            <select id="districtSelect">
+                <option value="default">Select District</option>
+                <!-- Populate options dynamically based on selected state -->
+            </select>
+        </div>
+
+        <div class="container">
+            <button id="getDataBtn">Get Data</button>
+        </div>
+
+        <div class="container data-container">
+            <h2>Data</h2>
+            <div id="dataContainer"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 COVIDApp. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- <script src="districts.js"></script> -->
+
+</body>
+</html>
